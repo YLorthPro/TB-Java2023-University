@@ -15,6 +15,7 @@ public final class StudentEntity extends UserEntity {
     @Column(nullable = false, unique = true)
     @Getter
     private String numeroMatricule;
+    
     @ManyToMany
     @JoinTable(name = "student_courses",
             joinColumns = @JoinColumn(name = "student_id"),

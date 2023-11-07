@@ -1,6 +1,6 @@
 package be.bstorm.exouniversite.pl.controller;
 
-import be.bstorm.exouniversite.bl.services.implementations.AuthService;
+import be.bstorm.exouniversite.bl.services.AuthService;
 import be.bstorm.exouniversite.pl.models.dtos.Auth;
 import be.bstorm.exouniversite.pl.models.forms.LoginForm;
 import org.springframework.web.bind.annotation.PostMapping;

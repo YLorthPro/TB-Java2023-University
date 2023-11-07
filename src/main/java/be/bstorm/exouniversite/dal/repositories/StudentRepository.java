@@ -8,6 +8,5 @@ import java.util.Optional;
 
 public interface StudentRepository extends JpaRepository<StudentEntity, Long> {
     Optional<UserEntity> findByLogin(String login);
-    Optional<StudentEntity> findByNumeroMatricule(String numeroMatricule);
-    void deleteByNumeroMatricule(String numeroMatricule);
+
 }

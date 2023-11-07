@@ -1,4 +1,4 @@
-package be.bstorm.exouniversite.bl.services.implementations;
+package be.bstorm.exouniversite.bl.services;
 
 import be.bstorm.exouniversite.pl.models.dtos.Auth;
 import be.bstorm.exouniversite.pl.models.forms.LoginForm;

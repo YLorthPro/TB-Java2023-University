@@ -1,6 +1,5 @@
 package be.bstorm.exouniversite.pl.models.forms;
 
-import be.bstorm.exouniversite.pl.models.dtos.Section;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;

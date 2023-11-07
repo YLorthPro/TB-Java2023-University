@@ -1,5 +1,6 @@
 package be.bstorm.exouniversite.bl.services.implementations;
 
+import be.bstorm.exouniversite.bl.services.AuthService;
 import be.bstorm.exouniversite.dal.models.entities.UserEntity;
 import be.bstorm.exouniversite.dal.repositories.ProfessorRepository;
 import be.bstorm.exouniversite.dal.repositories.StudentRepository;
@@ -14,7 +15,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class AuthServiceImpl implements AuthService{
+public class AuthServiceImpl implements AuthService {
 
     private final StudentRepository studentRepository;
     private final ProfessorRepository professorRepository;
