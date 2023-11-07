@@ -1,4 +1,4 @@
-package be.bstorm.exouniversite.pl.models;
+package be.bstorm.exouniversite.pl.models.dtos;
 
 import be.bstorm.exouniversite.dal.models.enums.UserRole;
 

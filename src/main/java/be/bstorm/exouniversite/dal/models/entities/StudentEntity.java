@@ -32,9 +32,8 @@ public final class StudentEntity extends UserEntity {
     public SectionEntity getFiliereChoisie() {
         return filiereChoisie;
     }
-
-    @Override
-    public void setUserRole() {
-        this.userRole = UserRole.STUDENT;
+    
+    public void setUserRoles() {
+        this.userRoles = Set.of(UserRole.STUDENT);
     }
 }

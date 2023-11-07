@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.Collection;
+
 @Entity
 @Table(name ="Course")
 @Setter
@@ -30,5 +32,16 @@ public class CourseEntity {
 
     public void setSectionEntity(SectionEntity sectionEntity) {
         this.sectionEntity = sectionEntity;
+    }
+
+    @ManyToMany(mappedBy = "coursSuivis")
+    private Collection<StudentEntity> studentEntities;
+
+    public Collection<StudentEntity> getStudentEntities() {
+        return studentEntities;
+    }
+
+    public void setStudentEntities(Collection<StudentEntity> studentEntities) {
+        this.studentEntities = studentEntities;
     }
 }

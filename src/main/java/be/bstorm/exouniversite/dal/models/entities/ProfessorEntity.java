@@ -10,6 +10,7 @@ import lombok.Setter;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name ="Professor")
@@ -17,6 +18,7 @@ import java.util.List;
 public final class ProfessorEntity extends UserEntity {
     @Column(nullable = false, unique = true)
     @Getter
+    @Setter
     private String numeroMatricule;
     @Column(nullable = false, unique = true)
     @Getter
@@ -29,7 +31,10 @@ public final class ProfessorEntity extends UserEntity {
         return new ArrayList<>(coursEnseignes);
     }
     
-    public void setUserRole(){
-        this.userRole = UserRole.PROFESSOR;
+    public void setUserRoles(boolean isAdmin){
+        if(isAdmin)
+            this.userRoles = Set.of(UserRole.PROFESSOR, UserRole.ADMIN);
+        else
+            this.userRoles = Set.of(UserRole.PROFESSOR);
     }
 }
